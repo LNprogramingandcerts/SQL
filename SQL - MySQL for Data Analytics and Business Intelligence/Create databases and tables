@@ -1,0 +1,10 @@
+code for creating databases CREATE DATABASE IF NOT EXISTS Sales;
+
+code for createing tables
+
+CREATE TABLE IF NOT EXISTS sales
+(
+purchase_number INT NOT NULL PRIMARY KEY AUTO_INCREMENT, 
+date_of_purchase Date NOT NULL,  
+customer_id INT, 
+item_code VARCHAR(10) NOT NULL);
