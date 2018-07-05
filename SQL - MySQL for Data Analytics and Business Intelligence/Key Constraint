@@ -1,0 +1,9 @@
+query for primary keys 
+Create table If not exists sales
+(
+purchase_number INT AUTO_INCREMENT, 
+date_of_purchase Date NOT NULL,  
+customer_id INT, 
+item_code VARCHAR(10),
+Primary Key (purchase_number)
+);
