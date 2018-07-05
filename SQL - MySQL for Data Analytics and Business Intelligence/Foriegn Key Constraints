@@ -1,0 +1,11 @@
+Code for foriegn key
+
+Create table if not exists sales
+(
+purchase_number INT auto_increment,
+date_of_purchase date,
+customer_id INT,
+item_code Varchar(10),
+Primary Key (purchase_number),
+foreign key (customer_id) references customers(Customer_id) on DElete Cascade
+);
