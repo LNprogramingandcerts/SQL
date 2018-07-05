@@ -1,0 +1,97 @@
+
+
+PRIMARY KEY constraint - exercise
+Section 6, Lecture 45
+
+Drop the “customers” table and re-create it using the following code:
+
+CREATE TABLE customers                                                            
+
+(
+
+    customer_id INT,
+
+    first_name varchar(255),
+
+    last_name varchar(255),
+
+    email_address varchar(255),
+
+    number_of_complaints int,
+
+primary key (customer_id)
+
+);
+
+ 
+
+Then, create the “items” table
+
+(columns - data types:
+
+item_id – VARCHAR of 255,
+
+item – VARCHAR of 255,
+
+unit_price – NUMERIC of 10 and 2,
+
+company­_id – VARCHAR of 255),
+
+and the “companies” table
+
+(company_id – VARCHAR of 255,
+
+company_name – VARCHAR of 255,
+
+headquarters_phone_number – integer of 12). 
+ 
+Questions
+Search for a question:
+
+1 question in this lecture
+AA
+error code 1064
+Hello.  I am on lecture 45. I get a syntax error for " number_of_complaints int " and " primary key (customer_id) ". Error Code 1064.     Am i missing something?
+Question Details
+Teaching tools
+
+Udemy
+
+
+
+
+
+
+MySql Code:
+
+create table if not exists customers
+(
+ customer_id INT,
+ first_name varchar(255),
+ last_name varchar(255),
+ email_address varchar(255),
+ number_of_complaints int,
+ primary key (customer_id)
+ );
+
+
+
+create table if not exists items
+(
+item_id varchar(255),
+item varchar(255),
+unit_price numeric(10,2),
+company_id varchar(255),
+primary Key (item_id)
+);
+
+
+
+create table if not exists companies
+(
+company_id varchar(255),
+company_name varchar(255),
+headquarters_phone_number INT(12)
+primary key (company_id)
+);
+
