@@ -1,0 +1,8 @@
+Where clause is use specific conditions in your query;
+
+Select *
+
+From employees
+
+Where 
+	first_name = 'Denis';
