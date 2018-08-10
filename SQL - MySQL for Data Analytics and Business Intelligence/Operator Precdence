@@ -1,0 +1,10 @@
+Logical order for operators
+AND > OR
+Must () to gain optimal operator precedence
+
+Select *
+
+From employees
+
+Where
+	last_name = 'Denis' AND (gender = 'M' OR gender = 'F')
