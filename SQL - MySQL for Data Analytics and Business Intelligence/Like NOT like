@@ -1,0 +1,8 @@
+Obtained names with desirse pattern
+
+Select *
+
+From employees
+
+Where
+	first_name NOT LIKE('%Mar%');
