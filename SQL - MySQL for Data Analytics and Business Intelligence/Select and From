@@ -1,0 +1,9 @@
+SQL query for Select and From
+
+SELECT 
+    first_name, last_name
+FROM
+    employees;
+    
+Select *
+From employees;
