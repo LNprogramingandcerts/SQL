@@ -1,0 +1,7 @@
+Or operator condition set to the same column
+Select *
+
+From employees
+
+Where
+	first_name = 'Elvis' OR first_name = 'Dennis'
