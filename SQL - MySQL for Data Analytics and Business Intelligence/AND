@@ -1,0 +1,9 @@
+The and operator use in where clause
+To combine two conditions in the stations codeblock 
+
+Select *
+
+From employees
+
+Where
+	first_name = 'Kellie' AND gender = 'F'
