@@ -1,0 +1,5 @@
+Using group by with aggregate functions is essentials
+
+Select first_name, count(first_name)
+From employees
+Group by first_name;
