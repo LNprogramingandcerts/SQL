@@ -1,0 +1,6 @@
+Distinct statement use to elimnate duplicate rows
+
+Select distinct
+  gender
+From 
+  employees;
