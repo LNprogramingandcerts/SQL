@@ -1,0 +1,4 @@
+Sort the query
+Select *
+From employees
+Order by first_name;
