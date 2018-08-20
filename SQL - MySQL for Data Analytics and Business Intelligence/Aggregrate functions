@@ -1,0 +1,5 @@
+Count(), SUM(),MAX(),MIN(),AVG()
+Aggregrate functions ignore null values
+Count()
+SELECT COUNT(distinct first_name) from employees;
+Use to count the first names with no duplicates 
