@@ -1,0 +1,8 @@
+limit statement goes at the end of query 
+
+Select *
+From
+salaries
+order by emp_no desc
+
+limit 10;
