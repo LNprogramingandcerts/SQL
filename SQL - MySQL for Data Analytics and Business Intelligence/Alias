@@ -1,0 +1,11 @@
+Select 
+first_name, Count(first_name) As names_count
+
+From 
+employees
+
+group by
+first_name
+
+order by
+first_name;
