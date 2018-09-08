@@ -1,3 +1,6 @@
+Rollback to a previous version if we mess up our table
+
+
 Select *
 From Departments_dup
 Order by dept_no;
