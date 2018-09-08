@@ -1,0 +1,12 @@
+Select *
+From Departments_dup
+Order by dept_no;
+
+Commit;
+
+Update departments_dup
+SET
+	dept_no = 'd011',
+    dept_name = 'Quality Control';
+
+ROLLBACK;
