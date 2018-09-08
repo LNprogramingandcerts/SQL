@@ -1,0 +1,13 @@
+insert into departments_dup
+values
+(
+	
+		'd010',
+    
+    'Business Analysis'
+    
+);
+    
+
+Select *
+From Departments_dup
