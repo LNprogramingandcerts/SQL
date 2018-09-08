@@ -1,0 +1,33 @@
+Update existing rows in SQL
+insert into employees
+(
+emp_no,
+birth_date,
+first_name,
+last_name,
+gender,
+hire_date
+)
+values
+(
+999901,
+'1990-10-12',
+'Lo',
+'LP',
+'F',
+'1999-02-12'
+);
+
+Update employees
+Set
+	first_name = 'Stella',
+    last_name = 'Parkinson',
+    birth_date = '1990-12-31',
+    gender = 'F'
+
+Where
+ emp_no = 999901;
+ 
+ Select *
+ From employees
+ Where emp_no = 999901;
