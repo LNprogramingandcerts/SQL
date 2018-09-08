@@ -1,0 +1,16 @@
+Select * 
+From employees;
+
+
+Commit;
+
+Delete FROM employees
+Where 
+emp_no = 999903;
+
+
+Select * 
+From employees;
+Where emp_no = 999903;
+
+rollback;
