@@ -1,0 +1,11 @@
+Drop 
+Once drop table it is gone cannot use rollback
+
+Truncate
+Delete without a where clause
+auto incremental values will reset
+
+Delete 
+Use to remove rows by rows
+
+Truncate is quicker than delete
