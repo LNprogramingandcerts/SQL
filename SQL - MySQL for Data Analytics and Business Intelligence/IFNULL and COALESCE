@@ -1,0 +1,25 @@
+IFNULL 
+Returns the first indicated if the data values is not null
+cannot contain more than two parameteres 
+Coalesce is like ifnull but can contain more than two parameters
+Does make any changes to dataset but only replaces null values with values
+
+Select 
+dept_no,
+ifnull(dept_name, 'Department name not provided') as dept_name
+
+From Departments_dup;
+
+Select 
+dept_no,
+coalesce(dept_name, 'Department name not provided') as dept_name
+
+From Departments_dup;
+
+Select 
+dept_no,
+dept_name,
+coalesce(dept_name, dept_name, 'Department name not provided') as dept_manager
+
+From Departments_dup
+ORDER BY dept_no ASC;
