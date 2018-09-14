@@ -1,0 +1,10 @@
+SUM doesnt work like other aggregrate function
+SUM only use with numerical data
+
+Select SUM(salary)
+From salaries;
+
+
+Select SUM(salary)
+From salaries
+Where from_date > '1997-01-01';
