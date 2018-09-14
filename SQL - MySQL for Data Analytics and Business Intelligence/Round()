@@ -1,0 +1,5 @@
+Round can locate anywhere in the sql query
+
+select Round(AVG(salary),1)
+from salaries
+Where from_date > '1997-01-01';
