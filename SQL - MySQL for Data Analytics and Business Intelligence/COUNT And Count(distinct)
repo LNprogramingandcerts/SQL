@@ -1,5 +1,5 @@
 Counting rows in sql 
-
+Count(*) is count the null values as well 
 
 
 
