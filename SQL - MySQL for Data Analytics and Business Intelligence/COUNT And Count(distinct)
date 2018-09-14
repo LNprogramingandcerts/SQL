@@ -1,0 +1,12 @@
+Counting rows in sql 
+
+
+
+
+select *
+From salaries
+Order By salary DESC
+Limit 10;
+
+Select count(distinct from_date)
+from salaries;
