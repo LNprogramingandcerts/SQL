@@ -1,5 +1,7 @@
 Count(), SUM(),MAX(),MIN(),AVG()
 Aggregrate functions ignore null values
+Aggregate functions can be applied to any group of data values within a certain column
+frequently used together with group by clauses
 Count()
 SELECT COUNT(distinct first_name) from employees;
 Use to count the first names with no duplicates 
