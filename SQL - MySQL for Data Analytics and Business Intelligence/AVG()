@@ -1,0 +1,5 @@
+extracts the average all value and all non-null values
+
+
+select AVG(salary)
+from salaries;
