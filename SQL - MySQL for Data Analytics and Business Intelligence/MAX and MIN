@@ -1,0 +1,5 @@
+The highest value MAX
+The lowest value MIN
+
+select max(emp_no)
+from employees;
