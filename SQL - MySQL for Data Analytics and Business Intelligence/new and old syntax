@@ -8,3 +8,6 @@ departments_dup d
 Where 
 m.dept_no = d.dept_no
 order by m.dept_no;
+
+
+where is old syntax not use by professionals
