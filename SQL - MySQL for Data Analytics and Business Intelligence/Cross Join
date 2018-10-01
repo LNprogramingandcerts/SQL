@@ -1,0 +1,10 @@
+Cross join will take values from certain table and connect them with all values from tables we want to join them with
+
+select 
+dm.*, d.*
+
+from
+dept_manager dm
+	Cross join
+departments d
+order by dm.emp_no , d.dept_no;
