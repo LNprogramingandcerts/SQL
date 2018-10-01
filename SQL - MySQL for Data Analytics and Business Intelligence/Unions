@@ -1,3 +1,7 @@
+unions displayed the distinct values in output
+Union all retreives all values
+
+
 Select 
 e.emp_no,
 e.first_name,
