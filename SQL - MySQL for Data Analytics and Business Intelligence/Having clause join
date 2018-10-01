@@ -1,0 +1,12 @@
+select
+d.dept_name, AVG(salary) AS average_salary
+From 
+departments d
+Join 
+dept_manager m on d.dept_no = m.dept_no
+join
+salaries s on m.emp_no = s.emp_no
+Group By d.dept_name
+Having average_salary > 60000
+order by average_salary DESC
+;
