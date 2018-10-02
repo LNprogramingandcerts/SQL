@@ -1,0 +1,31 @@
+subqueries can be more efficient than using joins
+
+exist test row values for resistance
+exist is quicker larger data test
+In is faster with smaller data test
+
+
+select
+e.first_name, e.last_name
+from
+employees e
+where
+exists( select *
+from dept_manager dm
+where  dm.emp_no = e.emp_no
+order by emp_no);
+
+
+SELECT 
+    *
+   from employees e
+WHERE
+    EXISTS( SELECT 
+            title
+        FROM
+		titles t
+        WHERE
+        t.emp_no = e.emp_no 
+        AND
+            t.title = 'Assistant Engineer')
+ORDER BY e.first_name;
