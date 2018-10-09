@@ -1,0 +1,45 @@
+USE employees;
+Drop procedure If exists select_employees;
+
+DELIMITER $$
+Create Procedure select_employees()
+Begin
+			
+            Select * From Employees
+            Limit 1000;
+
+END$$
+
+Delimiter ;
+
+
+Call employees.select_employees();
+
+
+call select_employees();
+
+DELIMITER $$
+
+CREATE PROCEDURE avg_salary()
+
+BEGIN
+
+                SELECT
+
+                                AVG(salary)
+
+                FROM
+
+                                salaries;
+
+END$$
+
+DELIMITER ;
+
+CALL avg_salary;
+
+CALL avg_salary();
+
+CALL employees.avg_salary;
+
+CALL employees.avg_salary(); 
