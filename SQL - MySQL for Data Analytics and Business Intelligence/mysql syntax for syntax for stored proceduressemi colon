@@ -1,0 +1,15 @@
+semi colon;
+they function as a statemetn terminator
+techicall, they can also be called delimiters($$)
+
+structure of procedure
+Delimiter$$
+create procedure procedure_name()
+begin
+
+  select
+  '
+  '
+  '
+  Limt;
+ End$$
