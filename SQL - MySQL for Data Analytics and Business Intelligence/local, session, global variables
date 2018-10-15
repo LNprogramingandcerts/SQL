@@ -1,0 +1,3 @@
+local variable can be used within stored procedures
+seesion variable deal certain time and end in a certain time
+global variable can used on multiple connections
