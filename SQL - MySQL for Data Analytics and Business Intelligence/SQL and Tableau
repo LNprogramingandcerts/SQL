@@ -1,0 +1,49 @@
+select 
+emp_no, from_date, to_date
+From
+t_dept_emp;
+
+select distinct
+emp_no, from_date, to_date
+from 
+t_dept_emp;
+
+select
+YEAR(d.from_date) as calendar_year,
+gender,
+count(e.emp_no) as num_of_employees
+from
+	t_employees e
+    join
+    t_dept_emp d on d.emp_no = e.emp_no
+Group By calendar_year, e.gender
+Having calendar_year >= 1990;
+
+Then export file sql workbench to csv file
+
+
+select
+d.dept_name,
+ee.gender,
+dm.emp_no,
+dm.from_date,
+dm.to_date,
+e.calendar_year,
+
+CASE
+	When YEAR(dm. to_date) >= e.calendar_year AND YEAR(dm.from_date)<= e.calendar_year THEN 1 ELSE 0
+    END AS active
+    
+
+From
+(Select Year(hire_date) AS calendar_year
+From 
+t_employees
+Group By calendar_year) e
+Cross Join
+t_dept_manager dm
+Join
+t_departments d on dm.dept_no = d.dept_no
+Join
+t_employees ee on dm.emp_no = ee.emp_no
+Order BY dm.emp_no, calendar_year;
