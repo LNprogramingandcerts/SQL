@@ -1,2 +1,6 @@
 Select ENAME AS EMPLOYEE, Sal AS SALARY
 FROM EMP;
+
+select 'hello my name is' || ename as "concatenated value"
+From EMP
+where job = 'MANAGER'
