@@ -1,0 +1,23 @@
+Select ename, hiredate
+From EMP
+Where DEPTNO IN (20,30)
+
+Select ename, hiredate 
+FROM EMP
+WHERE ENAME IN ('FORD','SMITH','ALLEN','WARD', 'MARTIN')
+
+Select ename, hiredate 
+FROM EMP
+WHERE ENAME NOT IN ('FORD', 'SMITH', 'ALLEN','WARD', 'MARTIN')
+
+select * from emp
+where sal between 1000 and 2000;
+
+Select * From emp
+where comm is not null;
+
+Select *
+From EMP
+Where COMM is null
+AND sal between 1100 and 5000
+AND sal != 3000
