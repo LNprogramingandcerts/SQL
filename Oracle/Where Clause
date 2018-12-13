@@ -1,1 +1,20 @@
+Select * 
+from emp 
+where job = 'MANAGER';
 
+
+Select * 
+from emp 
+where job = 'SALESMAN'
+AND sal = 1600
+AND DEPTNO = 30
+
+NOT OPERATOR 
+Select * 
+From emp
+Where Job != 'SALESMAN'
+
+Less than and greater than Operator
+Select * 
+From emp
+Where Job != 'SALESMAN'
