@@ -1,0 +1,4 @@
+Select * 
+From EMP
+Where Job = 'CLERK'
+OR JOB = 'SALESMAN';
