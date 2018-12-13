@@ -4,3 +4,7 @@ FROM EMP;
 select 'hello my name is' || ename as "concatenated value"
 From EMP
 where job = 'MANAGER'
+
+SELECT ENAME, SAL
+FROM EMP
+ORDER BY ENAME DESC
