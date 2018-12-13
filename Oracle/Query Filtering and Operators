@@ -1,0 +1,5 @@
+Select *
+From EMp
+WHERE ( COMM IS NULL or COMM = 0)
+AND SAL > 1100 AND SAL < 5000
+AND SAL <> 1500 
