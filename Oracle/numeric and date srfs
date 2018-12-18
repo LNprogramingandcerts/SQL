@@ -1,0 +1,3 @@
+select ename, hiredate, trunc(hiredate, 'MONTH')
+from emp
+where trunc(hiredate,'Year') = '01/01/1982'
