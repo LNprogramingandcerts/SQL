@@ -1,0 +1,6 @@
+
+select ename, job, sal, NVL(to_char(comm), 'No data found')
+from emp
+where empno in (7839, 7689, 7566, 7654)
+
+select ename, length(ename), nvl(nullif(to_char(length(ename)), to_char(5)), 'length is 5') from emp
