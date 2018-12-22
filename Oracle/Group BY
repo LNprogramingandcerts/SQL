@@ -1,0 +1,3 @@
+select avg(sal), job
+from emp
+group by job
