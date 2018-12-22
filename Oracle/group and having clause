@@ -1,0 +1,4 @@
+select count(*), job
+from emp
+group by job  
+having count(*) = 2
