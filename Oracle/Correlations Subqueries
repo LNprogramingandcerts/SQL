@@ -1,0 +1,2 @@
+Select empno, ename, job, mgr, hiredate, sal, comm, e.deptno as deptno, d.deptno as deptno, dname, loc
+From (select * from dept) d LEFT OUTER JOIN (select * from emp where job = 'SALESMAN') e on e.deptno = d.deptno
