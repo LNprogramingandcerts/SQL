@@ -1,0 +1,7 @@
+Select *
+From emp 
+Where NOT EXIST (select null from dual)
+
+Select *
+FROM emp
+WHERE EXISTS (select * from emp where job = 'PROGRAMMER')
