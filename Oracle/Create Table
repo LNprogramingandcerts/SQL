@@ -1,0 +1,6 @@
+Create table Store
+(stored_id number
+City varchar(50)
+)
+Insert all 
+into stores(store_id, city) VALUES (4, 'Philadelphia')
