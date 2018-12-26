@@ -1,0 +1,13 @@
+Create Table Products
+(
+product_id number, not null
+name varchar(50)
+product_cost number(5,2)
+product_type varchar(10)
+store_id number not null,
+)
+constraint prduct-pk
+Primary Key (prouct_id)
+
+Insert INTO products(product_id, name, product_cost, product_retail, product_type, store_id)
+Value (1001, 'Colgate ToothPaste', 2.24, 4.45, 'hygiene', 2);
