@@ -1,0 +1,9 @@
+Create Table employees AS
+Select empno, ename, job, hiredate, sal , comm
+from EMP;
+ALKTER Table employees
+add store_id number;
+
+Update employees
+Set store_id = 4
+where job = 'ANALYST'
