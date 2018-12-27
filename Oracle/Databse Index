@@ -1,0 +1,15 @@
+Select * From employees
+
+Create Index emp_name_idx
+  On employees(ename)
+  
+  Select * From employees
+  Where ename = 'John'
+  
+  Create Index emp_name_job_date_idx
+  on employees(ename. job, hiredate)
+  
+  Select * From employees
+  where ename = 'John'
+  and hiredate = ''
+  and job = ''
