@@ -1,0 +1,18 @@
+Select * From stores
+
+Select Store_id, city, count(*)
+From stores
+Group By store_id, city
+Order by Count(*)
+
+Select rowid, store_id, city From stores
+Rowid is the address for records
+
+Delete From stores
+where rowid NOT IN (
+
+Select MIN(rowid)
+From stores
+Group by store_id, city
+
+)
